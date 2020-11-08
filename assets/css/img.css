@@ -1,0 +1,45 @@
+  * {
+      margin: 0;
+      padding: 0;
+  }
+
+  .img-himasi {
+      background: #fff;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #111;
+      /* fallback for old browsers */
+      background: -webkit-linear-gradient(to left, #141E30, #111, #141E30);
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to left, #141E30, #111, #141E30);
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+
+  .swiper-container {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 200px;
+  }
+
+  .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 300px;
+      height: 300px;
+      -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, #0006);
+  }
+
+  .obj-img {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: white;
+      box-shadow: lightslategrey;
+      font-style: oblique;
+      font-size: medium;
+      text-align: center;
+      margin-top: -50px;
+  }
