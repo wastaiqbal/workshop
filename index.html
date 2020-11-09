@@ -394,15 +394,11 @@
 								<div class="realistic">
 									<div class="container text-center">
 										<div id="display"></div>
-										<audio id="audio" loop controls hidden></audio>
-										<!-- <button onclick="prevAudio()" type="button"
-											class="btn btn-secondary btn-sm playmu">Prev</button> -->
-										<button onclick="playAudio()" type="button"
+										<button onclick="togglePlay()" type="button"
 											class="btn btn-primary btn-sm playmu">Play</button>
-										<button onclick="pauseAudio()" type="button"
+										<button onclick="togglePause()" type="button"
 											class="btn btn-danger btn-sm pausemu">Pause</button>
-										<!-- <button onclick="nextAudio()" type="button"
-											class="btn btn-secondary btn-sm pausemu">Next</button> -->
+											<audio id="myAudio" src="assets/audio/future.mp3" preload="auto"></audio>
 									</div>
 									<div id="fly-in">
 										<!-- 2 -->

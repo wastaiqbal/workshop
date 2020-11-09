@@ -266,53 +266,16 @@ $('.coidea-3d-carousel').imagesLoaded({
 });
 
 // Music background
-var listmusik = {
-  "name": ["assets/audio/future"],
-  // "img": ["220px-Calum_Scott_You_Are_the_Reason.jpg", "AThousand_Years.jpg", "EdSheeren-Prefect.jpg"]
-};
-
-var value = 0;
-
-function show() {
-  // $("#display").html(
-  //   `<img src="img/${listmusik.img[value]}" width="200" height="200"/>                                      <p>${listmusik.name[value]}</p>`
-  // );
-  $("#audio").attr("src", `../assets/audio/future.mp3`);
-}
-
-show();
-
-var audio = document.getElementById("audio");
-
-// next
-function nextAudio() {
-  if (value < 2) {
-    value++;
-    show();
-    pauseAudio();
-    audio.currentTime = 0;
-  }
-}
-
-// prev
-function prevAudio() {
-  if (value > 0) {
-    value--;
-    show();
-    pauseAudio();
-    audio.currentTime = 0;
-  }
-}
-
-// play
-function playAudio() {
-  audio.play();
-}
-
-// pause
-function pauseAudio() {
-  audio.pause();
-}
+var myAudio = document.getElementById("myAudio");
+  
+var isPlaying = false;
+  function togglePlay() {
+	  myAudio.play();
+	};
+  
+  function togglePause() {
+	  myAudio.pause();
+	};
 
 // countdown
 function animation(span) {

@@ -1,0 +1,28 @@
+<html>
+<head>
+ <title>Membuat Button Voice by jooinfoo.com</title>
+</head>
+<body>
+<audio id="myAudio" src="beep.mp3" preload="auto"></audio>
+<a onClick="togglePlay()"><button type="button">Play</button></a>
+
+<script type="text/javascript">
+ var myAudio = document.getElementById("myAudio");
+var isPlaying = false;
+
+function togglePlay() {
+  if (isPlaying) {
+    myAudio.pause()
+  } else {
+    myAudio.play();
+  }
+};
+myAudio.onplaying = function() {
+  isPlaying = true;
+};
+myAudio.onpause = function() {
+  isPlaying = false;
+};
+</script>
+</body>
+</html>
